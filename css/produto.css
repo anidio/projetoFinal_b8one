@@ -23,9 +23,7 @@
     color: #40B25C;
 }
 
-.color__picker{
-    margin: 14px 0 28px 0;
-}
+
 
 .polegada__picker{
     display: flex;
@@ -200,31 +198,36 @@
     font-weight: bold;
 }
 
-
-
-
-
 /*Selecionar cor do produto*/
+
+.color__picker{
+    margin: 14px 0 28px 0;
+}
 
 .color__picker{
     display: flex;
     gap: 16px;
 }
 
-.color__picker li{
+.color__picker button{
     width: 32px;
     height: 32px;
     border-radius: 50%;
 }
 
-.color__picker li:first-child{
+.color__picker button:first-child{
     background-color: #595961;
 }
 
-.color__picker li:nth-child(2){
+.color__picker button:nth-child(2){
     background-color: #FFD1C2;
 }
 
-.color__picker li:last-child{
+.color__picker button:last-child{
     background-color: #C8C8CF;
+}
+
+.color__picker button:active{
+    width: 40px;
+    height: 40px;
 }

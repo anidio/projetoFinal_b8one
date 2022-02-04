@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px)  {
+    .header__categories{
+      height: 96px;
+    }
+
+    .header__categories li{
+        height: 48px;
+    }
+  }

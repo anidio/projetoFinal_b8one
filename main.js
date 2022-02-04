@@ -8,7 +8,9 @@ let numero = 0;
 
 soma.addEventListener("click", ()=> {
 
-    if(numero == 3){}
+    if(numero == 3){
+        alert('Limite de estoque atingido')
+    }
 
     else{
         numero++;
@@ -32,5 +34,12 @@ sub.addEventListener("click", ()=> {
     
 });
 
-b8.addEventListener("al")
+b8.addEventListener("click", ()=> {
+
+    alert('Hugo, Me contrata! <3')    
+
+    
+});
+
+
 
