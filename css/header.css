@@ -19,8 +19,8 @@
 
 .container{
     margin: 0 auto;
-    max-width: 1376px;
-    padding: 16px 32px;
+    width: 1376px;
+    padding: 16px 0;
 }
 
 .header__wrapper{
@@ -76,6 +76,7 @@
 .header__categories--list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* header 3*/
