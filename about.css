@@ -1,0 +1,28 @@
+.about{
+    border-top: 1px solid #E9E9E9;
+    margin-bottom: 64px;
+}
+
+.about__h2{
+    margin-bottom: 24px;
+}
+
+.about__list{
+    margin: 24px 0 24px 0;
+}
+
+.about__link{
+    color: #40599d;
+}
+
+.about__title{
+    margin: 64px 0 24px 0;
+}
+
+.about span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;    
+    gap: 64px;
+}
+
