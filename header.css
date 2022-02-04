@@ -1,0 +1,135 @@
+.header__nav li:last-child{
+    position: relative;
+}
+
+.header__nav li:last-child::before{
+    content:"0";
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    background: #E36305;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*Header position*/
+
+.container{
+    margin: 0 auto;
+    max-width: 1376px;
+    padding: 16px 32px;
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header__wrapper ul{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.header__search{
+    max-width: 902px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    gap: 8px;   
+    margin: 0 24px 0 51px;
+    border: 1px solid #9FA3A6;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 20px;
+}
+
+.header__search input{
+    flex-grow: 2;
+    outline: none;
+}
+
+.header__search button{
+    background-color: #FFFFFF;
+}
+
+/*NAV produtos*/
+
+.header__categories{
+    display: flex;
+    height: 48px;
+    background: #030303;
+    
+}
+
+.header__categories a{
+    color: #FFFFFF;
+    padding-right: 32px;
+}
+
+.header__categories--list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* header 3*/
+
+.header__bottom{
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.breadcrumbs{
+    display: flex;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    gap: 24px;  
+    
+}
+
+.breadcrumbs li{
+    position: relative;
+    
+}
+
+.breadcrumbs a{
+    color: #40464D;
+}
+
+.active a{
+    color: #E36305;
+}
+
+.breadcrumbs li:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    left: -12px;
+    top: 50%;
+    transform: translatey(-50%);
+    z-index: 100;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./assets/img/seta.svg);
+}
+
+.breadcrumbs li:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    right: -22px;
+    top: 50%;
+    transform: translatey(-50%);
+    z-index: 100;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./assets/img/seta.svg);
+}
