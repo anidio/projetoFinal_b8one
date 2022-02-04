@@ -1,7 +1,6 @@
 
 /* Grid de produtos mais vendidos
 */
-
 .grid1{
     border-top: 1px solid #E9E9E9;
 }
@@ -83,4 +82,16 @@
 
 .grid__span{
     margin-top: 18px;
+}
+
+.grid__produtos--promocao{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: baseline;
+}
+
+.grid__produtos--promocao img{
+    height: 16px;
 }

@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="produto.css">
-    <link rel="stylesheet" href="gridProdutos.css">
-    <link rel="stylesheet" href="banner.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/produto.css">
+    <link rel="stylesheet" href="css/gridProdutos.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <title>Document</title>
 </head>
@@ -152,9 +152,9 @@
         
                                 <div class="produto__descricao--quantidade">
                                     <div class="produto__descricao--contador">   
-                                        <button><img src="./assets/img/menos.svg" alt=""></button>
-                                        <span>01</span>
-                                        <button><img src="./assets/img/mais.svg" alt=""></button>
+                                        <button id="menos__produto"><img src="./assets/img/menos.svg" alt=""></button>
+                                        <span id="contador">0</span>
+                                        <button id="mais__produto"><img src="./assets/img/mais.svg" alt=""></button>
                                     </div>
                                     
         
@@ -169,8 +169,8 @@
         
                                 <div class="produto__descricao--buttons">
         
-                                    <button class="button__green">ADD TO CART</button>
-                                    <button class="button__orange">BUY NOW</button>
+                                    <button class="button__green" id="b8one" >ADD TO CART</button>
+                                    <button class="button__orange" >BUY NOW</button>
         
                                     <p>Shipped by <span>Store 1</span>  Sold by <span>Store 2</span> </p>
         
@@ -204,6 +204,11 @@
     
                     <ul class="grid__produtos">
                         <li>
+
+                            <div class="grid__produtos--promocao">
+                                <img src="./assets/img/zero.svg" alt="">
+                                <img src="./assets/img/save.svg" alt="">
+                            </div>
                             <a href="#" class="grid__produto--link">
                                 <img src="./assets/img/produto1.svg" alt="">
                                 <p>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</p>
@@ -215,45 +220,49 @@
                         <li>
                             <a href="#" class="grid__produto--link">
                                 <img src="./assets/img/produto2.svg" alt="">
-                                <p>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</p>
+                                <p>Apple Watch Series 5 GPS, 44mm Space Gray Alumi...</p>
                                 <span class="grid__span"> </span>
                                 <span>$ 449.00</span>
                                 <span>10x $ 320,00</span>
                             </a>
                         </li>
                         <li>
+                            <div class="grid__produtos--promocao">
+                                <img src="./assets/img/zero.svg" alt="">
+                                <img src="./assets/img/save.svg" alt="">
+                            </div>
                             <a href="#" class="grid__produto--link">
                                 <img src="./assets/img/produto3.svg" alt="">
-                                <p>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</p>
+                                <p>The Pioneer Woman Cowboy Rustic 14-Piece...</p>
                                 <span>$ 748.00</span>
-                                <span>$ 548.00</span>
+                                <span>$ 59.00</span>
                                 <span>10x $ 320,00</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="grid__produto--link">
                                 <img src="./assets/img/produto4.svg" alt="">
-                                <p>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</p>
+                                <p>onn. Wireless Charging Pad with LED Night Light</p>
                                 <span>$ 748.00</span>
-                                <span>$ 548.00</span>
+                                <span>$ 12.88</span>
                                 <span>10x $ 320,00</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="grid__produto--link">
                                 <img src="./assets/img/produto5.svg" alt="">
-                                <p>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</p>
+                                <p>Office Chair Ergonomic Desk Chair Mesh Comp...</p>
                                 <span>$ 748.00</span>
-                                <span>$ 548.00</span>
+                                <span>$$ 54.99</span>
                                 <span>10x $ 320,00</span>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="grid__produto--link">
                                 <img src="./assets/img/produto6.svg" alt="">
-                                <p>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</p>
+                                <p>Hershey, Halloween Assorted Candy Nuts...</p>
                                 <span>$ 748.00</span>
-                                <span>$ 548.00</span>
+                                <span>$ $ 9.94</span>
                                 <span>10x $ 320,00</span>
                             </a>
                         </li>
@@ -278,6 +287,11 @@
     
                     <ul class="grid__produtos">
                         <li>
+
+                            <div class="grid__produtos--promocao">
+                                <img src="./assets/img/zero.svg" alt="">
+                                <img src="./assets/img/save.svg" alt="">
+                            </div>
                             <a href="#" class="grid__produto--link">
                                 <img src="./assets/img/produto7.svg" alt="">
                                 <p>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</p>
@@ -296,6 +310,10 @@
                             </a>
                         </li>
                         <li>
+                            <div class="grid__produtos--promocao">
+                                <img src="./assets/img/zero.svg" alt="">
+                                <img src="./assets/img/save.svg" alt="">
+                            </div>
                             <a href="#" class="grid__produto--link">
                                 <img src="./assets/img/produto9.svg" alt="">
                                 <p>VIZIO 65" Class 4K UHD Quantum SmartCast Sma...</p>
@@ -513,6 +531,6 @@
             </div>
         </footer>
 
-    
+    <script src="main.js"></script>
 </body>
 </html>
