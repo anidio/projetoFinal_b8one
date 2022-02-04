@@ -1,0 +1,86 @@
+
+/* Grid de produtos mais vendidos
+*/
+
+.grid1{
+    border-top: 1px solid #E9E9E9;
+}
+
+.grid__titles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    
+}
+
+.grid__titles h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #030303;
+}
+
+.grid__titles a{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #40B25C;
+}
+
+.grid__produtos{
+    display: flex;
+    margin-top: 16px;
+}
+
+.grid__produtos li{
+    width: 216px;
+    height: 360px;
+    margin-right: 16px;
+    padding: 16px;
+}
+
+.grid__produtos p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #030303;
+}
+
+.grid__produto--link{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid__produto--link span:nth-child(3){
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #9FA3A6;
+}
+
+.grid__produto--link span:nth-child(4){
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #030303;
+}
+
+.grid__produto--link span:nth-child(5){
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #40464D;
+}
+
+.grid__produto--link span{
+    margin-bottom: 4px;
+}
+
+.grid__produto--link p{
+    margin: 16px 0 12px 0;
+}
+
+.grid__span{
+    margin-top: 18px;
+}
